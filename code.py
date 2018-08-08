@@ -32,8 +32,6 @@ Y_train=np.reshape(Y_train,(-1,1))
 onehotencoder= OneHotEncoder(categorical_features=[0])
 Y_train= onehotencoder.fit_transform(Y_train).toarray()
  
-#X_train,X_test,Y_train,Y_test=train_test_split(x,y,test_size=.2,random_state=1)
-
 def multi_layer_perceptron (x,weights,baises):
     layer_1=tf.nn.sigmoid(tf.add(tf.matmul(x,weights['w1']),baises['b1']))
     
@@ -94,6 +92,7 @@ with tf.Session() as sess:
         print('Accuracy_train:',accuracy.eval({X:X_train, Y:Y_train}))
     
     
-    
+
+#prediction of test set     
     classification = sess.run(tf.argmax(yy, 1), feed_dict={X: X_test})
     
