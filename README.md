@@ -1,6 +1,6 @@
 # kaggle-mnist
 
-* digit recognizer.py - code file  
+* code.py - code file  
 
 
 
