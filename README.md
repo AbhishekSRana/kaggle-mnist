@@ -1,4 +1,7 @@
 # kaggle-mnist
 
-digit recognizer- code 
-prediction- prediction of test set
+* digit recognizer.py - code file  
+
+
+
+* prediction.csv   - prediction of test set
